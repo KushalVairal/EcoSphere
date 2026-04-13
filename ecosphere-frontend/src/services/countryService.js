@@ -1,8 +1,7 @@
 import apiClient from './apiClient'
 import { getAllCountries, getCountryByIso } from '../mockData'
 
-const isMockMode = () =>
-  import.meta.env.VITE_USE_MOCK === 'true' || import.meta.env.DEV
+const isMockMode = () => import.meta.env.VITE_USE_MOCK === 'true'
 
 export const countryService = {
   async fetchAllCountries() {
