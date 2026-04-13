@@ -9,8 +9,8 @@ const MOCK_USERS = [
 ]
 
 const isMockMode = () => {
-  // Set VITE_USE_MOCK=true in .env.local to force mock mode
-  return import.meta.env.VITE_USE_MOCK === 'true' || import.meta.env.DEV
+  // Only use mock if explicitly set to 'true'
+  return import.meta.env.VITE_USE_MOCK === 'true'
 }
 
 const mockLogin = (username, password) => {
