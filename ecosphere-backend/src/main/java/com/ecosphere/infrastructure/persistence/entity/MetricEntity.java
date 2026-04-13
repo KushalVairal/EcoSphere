@@ -18,7 +18,7 @@ public class MetricEntity {
     @Column(name = "iso_code", nullable = false, length = 3)
     private String isoCode;
 
-    @Column(name = "year", nullable = false)
+    @Column(name = "`year`", nullable = false)   // ← YAHAN BACKTICKS ADD KARO
     private Integer year;
 
     @Column(name = "co2_emissions")
